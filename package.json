@@ -1,5 +1,5 @@
 {
-  "name": "taskmanager",
+  "name": "task-manager",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,11 +10,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4",
     "mongodb": "^3.3.3",
-    "mongoose": "^5.7.7"
+    "mongoose": "^5.7.7",
+    "validator": "^10.9.0"
   },
   "devDependencies": {
-    "nodemon": "^1.18.9"
+    "nodemon": "^1.19.4"
   }
 }
