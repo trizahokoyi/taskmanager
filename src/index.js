@@ -1,17 +1,17 @@
-const express = require ('express');
+const express = require ('express'); // req exp frm nodemodule
 require ('./db/mongoose');
 const User = require('./models/user');
 const Task = require('./models/task');
 
-const app = express();
+const app = express();//invoking exp
 const port = process.env.PORT || 3000;
 
 app.use(express.json());
 
-app.post('/users',(req,res)=>{
+app.post('/users',(req,res)=>{//path
     const user = new    User(req.body);
 
-user.save().then(()=>{
+user.save().then(()=>{ //saving
     res.status(201).send(user);
 }).catch((error)=>{
     res.status(400).send(error);
